@@ -1,0 +1,163 @@
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        header nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 4;
+        }
+        
+        nav #flex-cont {
+            display: flex;
+            background-color: rgba(133, 130, 130, 0.856);
+            justify-content: space-around;
+            align-items: center;
+            padding-left: none;
+            border-bottom: 2px solid silver;
+            font-family: Helvetica;
+            font-weight: bold;
+            height: 75px;
+            width: 100%;
+        }
+        
+        nav #flex-cont a {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            border-right: 2px solid silver;
+            padding: 10px 15px;
+            margin: 0;
+        }
+        
+        nav #flex-cont a:hover,
+        nav #flex-cont .style:hover,
+        a.button:hover,
+        nav #flex-cont img:hover {
+            background-color: darkgray;
+            border-radius: 10px;
+        }
+        
+        nav #flex-cont a:active,
+        nav #flex-cont .style:active,
+        a.button:active,
+        nav #flex-cont img:active {
+            background-color: lavender;
+        }
+        
+        nav #flex-cont .style {
+            border-right: none;
+            background: slategray;
+            float: left;
+            border-radius: 20px;
+        }
+        
+        nav #flex-cont img {
+            width: 150px;
+            height: 70px;
+            display: flex;
+            cursor: pointer;
+        }
+        
+        header {
+            color: white;
+            height: 500px;
+            width: 100%;
+            background-image: url("images/creaeventi.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            padding-bottom: 15px;
+            border-bottom: 2px solid white;
+            z-index: 1;
+        }
+        
+        #overlay {
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+        }
+        
+        header h1 {
+            font-size: 100px;
+            font-weight: bold;
+            color: black;
+            margin: 50px;
+            font-family: 'Dosis', sans-serif;
+            z-index: 3;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Lexend', sans-serif;
+            font-weight: 500;
+            color: white;
+            width: 350px;
+            height: 36px;
+        }
+        
+        form {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            width: 30vw;
+            align-items: center;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        span {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        a {
+            cursor: pointer;
+        }
+        
+        footer {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(26, 23, 23, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer span {
+            color: white;
+        }
+        
+        .no-scroll {
+            overflow: hidden;
+        }
